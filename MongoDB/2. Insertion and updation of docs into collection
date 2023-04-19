@@ -4,7 +4,7 @@ db.createCollection("mycollection")
 
 
 Insert:
-db.student.insert({name:"KP"})
+db.student.insert({name:"name1"})
 
 InsertOne:
 db.student.insertOne({firstname:"name1", lastname:"name2", reg:"40120" })
