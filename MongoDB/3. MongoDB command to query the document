@@ -1,0 +1,28 @@
+At first you need to query,
+use student
+db.createCollection("mycollection")
+
+
+Find collection method:
+db.mycollection.find()
+
+Pretty collection method:
+db.mycollection.find().pretty()
+
+FindOne collection method:
+db.mycollection.findOne()
+
+And:
+db.mycollection.find({$and:[{"reg":"40120"},{"name":"name1"}]}).pretty()
+
+Or:
+db.mycollection.find({$or:[{"reg":"40120"},{"name":"name1"}]}).pretty()
+
+Nor:
+db.mycollection.find({$nor:[{"reg":"40120"},{"name":"name1"}]}).pretty()
+
+Not:
+db.mycollection.find({$not:[{"reg":"40120"},{"name":"name1"}]}).pretty()
+
+And & Or together:
+db.mycollection.find({“likes”:{$gt:10}$or:[{"reg":"40120"},{"name":"name1"}]}).pretty()
