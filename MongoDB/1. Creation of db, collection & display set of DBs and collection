@@ -1,0 +1,11 @@
+Create database:
+use student
+
+Create collections:
+db.createCollection("mycollection")
+
+Show databases:
+show dbs
+
+Show collections:
+show collections
