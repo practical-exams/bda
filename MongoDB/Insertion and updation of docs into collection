@@ -1,0 +1,22 @@
+First you have to query,
+use student
+db.createCollection("mycollection")
+
+
+Insert:
+db.student.insert({name:"KP"})
+
+InsertOne:
+db.student.insertOne({firstname:"name1", lastname:"name2", reg:"40120" })
+
+InsertMany:
+db.student.insertMany([{firstname:"name1", lastname:"name2", reg:"40120" }, {firstname:"name3", lastname:"name4", reg:"401200"}])
+
+Update:
+db.student.update({reg:40120},{$set:{reg:4012}})
+
+UpdateOne:
+db.student.updateOne({reg:40120},{$set:{reg:4012}})
+
+UpdateMany:
+db.student.updateMany({reg:40120},{$set:{reg:4012}},{$set:{firstname:"updateName"}})
