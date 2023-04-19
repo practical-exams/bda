@@ -1,0 +1,11 @@
+Create index method:
+db.mycollection.createIndex({"reg":40120, "description":-1})
+
+Drop index method:
+db.mycollection.dropIndex({"reg":40120})
+
+Get index method:
+db.mycollection.getIndexes()
+
+Aggregate method:
+db.mycollection.aggregate([{$group:{_id:"$by_user",num_tutorial:{$sum:1}}}])
