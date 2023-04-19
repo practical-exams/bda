@@ -1,0 +1,14 @@
+At first we need to query,
+use student
+db.createCollection("mycollection")
+db.mycollection.insertMany([{reg:"4012" }, {reg:"401"}, {reg:"401200"}, {reg:"40120"}])
+
+
+Limit method:
+db.mycollection.find({},{"reg":40120, _id:0}).limit(2)
+
+Skip method:
+db.mycollection.find({},{"reg":40120,_id:0}).limit(2).skip(1)
+
+Sort method:
+db.mycollection.find({},{"reg":40120,_id:0}).sort({"reg":1})
