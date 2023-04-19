@@ -1,3 +1,9 @@
+At first we need to query,
+use student
+db.createCollection("mycollection")
+db.mycollection.insertMany([{reg:"4012" }, {reg:"401"}, {reg:"401200"}, {reg:"40120"}])
+
+
 Create index method:
 db.mycollection.createIndex({"reg":40120, "description":-1})
 
