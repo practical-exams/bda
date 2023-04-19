@@ -1,6 +1,7 @@
 At first you need to query,
 use student
 db.createCollection("mycollection")
+db.student.insertMany([{reg:"40120", firstname:"name1", lastname:"name2", likes:"100"}, {reg:"401200", firstname:"name3", lastname:"name4", likes:"200"}])
 
 
 Find collection method:
